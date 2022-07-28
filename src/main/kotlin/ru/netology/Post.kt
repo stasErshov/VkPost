@@ -2,32 +2,31 @@ package ru.netology
 
 data class Post(
     val id:Int,
-    val owner_id: Int,
-    val from_id: Int,
-    val created_by: Int,
+    val ownerId: Int,
+    val fromId: Int,
+    val createdBy: Int? = null,
     val date: Int,
     val text: String,
-    val reply_owner_id: Int,
-    val reply_post_id: Int,
-    val friends_only: Boolean,
+    val replyOwnerId: Int? = null,
+    val replyPostId: Int? = null,
+    val friendsOnly: Boolean,
     val comments: Comments,
     val copyright: Copyright,
     val likes: Likes,
     val reposts : Reposts,
     val views: Views,
     val post_type: String,
-    val signer_id: Int,
-    val can_pin: Boolean,
-    val can_delete: Boolean,
-    val can_edit: Boolean,
-    val is_pinned: Boolean,
-    val marked_as_ads: Boolean,
-    val is_favorite: Boolean,
+    val signerId: Int,
+    val canPin: Boolean,
+    val canDelete: Boolean,
+    val canEdit: Boolean,
+    val isPinned: Boolean,
+    val markedAsAds: Boolean,
+    val isFavorite: Boolean,
     val donut: Donut,
-    val postponed_id: Int
-){
-
-}
+    val postponedId: Int? = null,
+    val attachments: Array<Attachment>
+)
 
 object WallService{
     var posts = emptyArray<Post>()
@@ -44,7 +43,7 @@ object WallService{
         var flag = false
         for ((index, onePost) in posts.withIndex())
             if (post.id == onePost.id) {
-                posts[index] = post.copy(owner_id = onePost.owner_id, date = onePost.date)
+                posts[index] = post.copy(ownerId = onePost.ownerId, date = onePost.date)
                 flag = true
             }
         return flag
