@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12027c09-817b-4cda-b602-8afafce423b5" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Post.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Post.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/netology/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/netology/main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/ru/netology/WallServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ru/netology/WallServiceTest.kt" afterDir="false" />
     </list>
@@ -19,6 +17,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -141,7 +149,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WallServiceTest.updateTest2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WallServiceTest.updateTest1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -154,7 +162,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.netology.WallServiceTest.updateTest2&quot;" />
+            <option value="&quot;ru.netology.WallServiceTest.updateTest1&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -173,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.WallServiceTest.shouldThrow1" />
-        <item itemvalue="Gradle.WallServiceTest" />
-        <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Gradle.WallServiceTest.updateTest2" />
         <item itemvalue="Gradle.VkPost [jacocoTestReport]" />
+        <item itemvalue="Gradle.WallServiceTest" />
+        <item itemvalue="Gradle.WallServiceTest.updateTest1" />
+        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.WallServiceTest.shouldThrow1" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +219,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659011525807</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial commit">
+      <created>1659086851164</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659086851164</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Initial commit">
+      <created>1659086998195</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659086998195</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
