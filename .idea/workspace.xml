@@ -73,7 +73,7 @@
       <command value="gradle jacocoTestReport" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.WallServiceTest.shouldThrow1">
+  <component name="RunManager" selected="Gradle.VkPost [jacocoTestReport]">
     <configuration name="VkPost [jacocoTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
