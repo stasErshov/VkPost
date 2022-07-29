@@ -1,5 +1,7 @@
 package ru.netology
 
+import kotlin.reflect.KClass
+
 data class Post(
     val id:Int,
     val ownerId: Int,
@@ -31,6 +33,7 @@ data class Post(
 object WallService{
     var posts = emptyArray<Post>()
     private var postId: Int = 0
+    private var comments = emptyArray<Comments>()
 
     fun add(post: Post): Post{
         var size = posts.size
@@ -48,5 +51,23 @@ object WallService{
             }
         return flag
     }
+
+    fun getId(index: Int) = if ((index >= 0) && (index <= posts.size)) posts[index].id else -2
+
+    fun createComment(postId: Int, comment: Comments): Comments {
+        val initSize = comments.size
+        for (i in posts.indices) {
+            if (getId(i) == postId) {
+                comments += comment
+                break
+            }
+        }
+        val lastSize = comments.size
+        if (initSize == lastSize) {
+            throw PostNotFoundException("No post with id $postId")
+        }
+        return comments.last()
+    }
+
 
 }

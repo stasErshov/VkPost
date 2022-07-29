@@ -1,8 +1,7 @@
 package ru.netology
 
-import org.junit.Test
-
 import org.junit.Assert.*
+import org.junit.Test
 
 class WallServiceTest {
     val post1: Post = Post(
@@ -57,20 +56,20 @@ class WallServiceTest {
         isFavorite = false,
         donut = Donut(isDonut = false, paidDuration = 1,canPublishFreeCopy = false, editMode = "qwe"),
         postponedId = 1,
-        attachments = emptyArray()
+        attachments = arrayOf(LinkAttachment(Link(url="1", title = "asd", caption = "qwe", description = "qwe")))
     )
 
     @Test
     fun addTest1() {
         WallService.add(post1)
         val id1 = WallService.posts.last().id
-        assertEquals(1,id1)
+        assertEquals(1, id1)
     }
     @Test
     fun addTest2() {
         WallService.add(post2)
         val id2 = WallService.posts.last().id
-        assertEquals(2,id2)
+        assertEquals(2, id2)
     }
     @Test
     fun updateTest1() {
@@ -81,5 +80,20 @@ class WallServiceTest {
     fun updateTest2() {
         var flag: Boolean = WallService.update(post2)
         assertEquals(true, flag)
+    }
+
+    val comment = Comments(count = 1, canPost = true, groupsCanPost = false, canClose = false, canOpen = false)
+
+    @Test(expected = PostNotFoundException::class)
+    fun shouldThrow() {
+        WallService.createComment(3, comment)
+    }
+
+    @Test()
+    fun shouldThrow1() {
+        WallService.add(post1)
+        WallService.add(post2)
+        val commentTrue : Comments = WallService.createComment(2, comment)
+        assertEquals(comment, commentTrue)
     }
 }

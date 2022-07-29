@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12027c09-817b-4cda-b602-8afafce423b5" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Attachment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Comments.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Comments.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Copyright.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Copyright.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Donut.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Donut.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Likes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Likes.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Post.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Post.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Reposts.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Reposts.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Views.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/netology/Views.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/netology/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/netology/main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/ru/netology/WallServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ru/netology/WallServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,11 +69,11 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="gradle jacocoTestReport" />
       <command value="gradle test" />
+      <command value="gradle jacocoTestReport" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.WallServiceTest.addTest1">
+  <component name="RunManager" selected="Gradle.WallServiceTest.shouldThrow1">
     <configuration name="VkPost [jacocoTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -92,27 +86,6 @@
         <option name="taskNames">
           <list>
             <option value="jacocoTestReport" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="VkPost [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -145,7 +118,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WallServiceTest.addTest1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WallServiceTest.shouldThrow1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -158,7 +131,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.netology.WallServiceTest.addTest1&quot;" />
+            <option value="&quot;ru.netology.WallServiceTest.shouldThrow1&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="WallServiceTest.updateTest2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.netology.WallServiceTest.updateTest2&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -177,10 +173,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.WallServiceTest.addTest1" />
-        <item itemvalue="Gradle.VkPost [test]" />
+        <item itemvalue="Gradle.WallServiceTest.shouldThrow1" />
         <item itemvalue="Gradle.WallServiceTest" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.WallServiceTest.updateTest2" />
         <item itemvalue="Gradle.VkPost [jacocoTestReport]" />
       </list>
     </recent_temporary>
@@ -208,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658835684756</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial commit">
+      <created>1659011525807</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659011525807</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
